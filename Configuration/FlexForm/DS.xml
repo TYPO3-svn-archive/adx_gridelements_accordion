@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<tx_adxgridelementsaccordion_general>
+			<ROOT type="array">
+				<TCEforms>
+					<sheetTitle>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.sheet.general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el type="array">
+					<layout type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.layout</label>
+							<config type="array">
+								<type>select</type>
+								<default type="string">layout1</default>
+								<items>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.layout.1</numIndex>
+										<numIndex index="1">layout1</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.layout.2</numIndex>
+										<numIndex index="1">layout2</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.layout.3</numIndex>
+										<numIndex index="1">layout3</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.layout.4</numIndex>
+										<numIndex index="1">layout4</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</layout>
+					<columns type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.columns</label>
+							<config type="array">
+								<type>input</type>
+								<size>2</size>
+								<eval>int,required</eval>
+								<default type="integer">1</default>
+							</config>
+						</TCEforms>
+					</columns>
+					<active type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.active</label>
+							<config type="array">
+								<type>input</type>
+								<size>2</size>
+								<eval>int</eval>
+								<default type="integer">0</default>
+							</config>
+						</TCEforms>
+					</active>
+					<event type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.event</label>
+							<config type="array">
+								<type>select</type>
+								<default type="string">click</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.event.click</numIndex>
+										<numIndex index="1">click</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.event.mouseover</numIndex>
+										<numIndex index="1">mouseover</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</event>
+					<speed type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.speed</label>
+							<config type="array">
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.speed.slow</numIndex>
+										<numIndex index="1">slow</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.speed.normal</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.speed.fast</numIndex>
+										<numIndex index="1">fast</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</speed>
+					<collapsible type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.collapsible</label>
+							<config type="array">
+								<type>check</type>
+								<default type="integer">1</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</collapsible>
+					<slide type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.slide</label>
+							<config type="array">
+								<type>check</type>
+								<default type="integer">1</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</slide>
+				</el>
+			</ROOT>
+		</tx_adxgridelementsaccordion_general>
+		<tx_adxgridelementsaccordion_rendering type="array">
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.sheet.rendering</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el type="array">
+					<fields type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields</label>
+							<config type="array">
+								<type>select</type>
+								<size>3</size>
+								<multiple>1</multiple>
+								<minitems>0</minitems>
+								<maxitems>99</maxitems>
+								<default type="string">header,subheader</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.header</numIndex>
+										<numIndex index="1">header</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.headerFallback</numIndex>
+										<numIndex index="1">headerFallback</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.subheader</numIndex>
+										<numIndex index="1">subheader</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.subheaderFallback</numIndex>
+										<numIndex index="1">subheaderFallback</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.text</numIndex>
+										<numIndex index="1">text</numIndex>
+									</numIndex>
+									<numIndex index="5">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.image</numIndex>
+										<numIndex index="1">image</numIndex>
+									</numIndex>
+									<numIndex index="6">
+										<numIndex index="0">LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.fields.imageBackground</numIndex>
+										<numIndex index="1">imageBackground</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</fields>
+					<ajax type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang.xfl:flexform.ajax</label>
+							<config type="array">
+								<type>check</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</ajax>
+				</el>
+			</ROOT>
+		</tx_adxgridelementsaccordion_rendering>
+	</sheets>
+</T3DataStructure>

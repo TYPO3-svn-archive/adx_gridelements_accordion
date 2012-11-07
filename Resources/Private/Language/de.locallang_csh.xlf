@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-06-13T20:22:32Z" product-name="adx_gridelements_accordion">
+		<header/>
+		<body>
+			<trans-unit id="fields.description" xml:space="preserve">
+				<source>Defines the fields and the order in which the list items are rendered.</source>
+				<target state="translated">Definiert die Felder und die Reihenfolge in der die Listenelemente der Kind-Datensätze gerendert werden.</target>
+			</trans-unit>
+			<trans-unit id="columns.description" xml:space="preserve">
+				<source>In how many columns to display the accordion.</source>
+				<target state="translated">In wie vielen Spalten das Accordion angezeigt werden soll.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

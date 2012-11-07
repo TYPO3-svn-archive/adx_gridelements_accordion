@@ -1,0 +1,28 @@
+
+.###CSS_CLASS_PREFIX###container .###CSS_CLASS_PREFIX###controllers {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.###CSS_CLASS_PREFIX###container .###CSS_CLASS_PREFIX###controllers > li {
+	position: relative;
+	float: left;
+	width: ###COLUMN_WIDTH###%;
+	margin: 0 0 0 ###COLUMN_SPACE###%;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.###CSS_CLASS_PREFIX###container .###CSS_CLASS_PREFIX###controllers > li:first-child {
+	margin-left: 0;
+}
+
+.###CSS_CLASS_PREFIX###container .###CSS_CLASS_PREFIX###controllers > li .loader {
+	background: transparent url('/###LOADER_ICON###') no-repeat center center;
+}
+
+.###CSS_CLASS_PREFIX###container .###CSS_CLASS_PREFIX###itemContent {
+	clear: both;
+}
