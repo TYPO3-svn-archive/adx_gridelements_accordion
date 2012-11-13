@@ -8,10 +8,9 @@ plugin.tx_adxgridelementsaccordion {
 
 	container {
 
-		styles = 
-
 		# Additional class names. cssClassPrefix is added automatically. Required one class!
-		classes = container
+		classes = {$plugin.tx_adxgridelementsaccordion.cssClassPrefix}container
+		styles = 
 	}
 
 	gutter = 2.857

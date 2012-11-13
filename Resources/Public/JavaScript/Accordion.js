@@ -30,7 +30,7 @@
 
 		_create: function(){
 			this.options.controllerSelector = '> .' + this.options.namespace + 'controllers > li';
-			this.options.contentSelector = '> .' + this.options.namespace + 'itemContent';
+			this.options.contentSelector = '> .' + this.options.namespace + 'item-content';
 			var options = this.options;
 			var self = this;
 

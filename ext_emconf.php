@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Extends Grid Elements with a flexible accordion.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '1.0.0',
+	'version' => '0.0.0',
 	'dependencies' => 'cms,gridelements',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,8 +34,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
+			't3jquery' => '2.0.6-',
 			'gridelements' => '1.2.3-',
-			't3jquery' => '2.0.0-',
 		),
 		'conflicts' => array(
 		),
