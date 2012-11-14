@@ -4,7 +4,7 @@
  */
 plugin.tx_adxgridelementsaccordion {
 
-	cssClassPrefix = tx-adxgridelementsaccordion-
+	cssClassPrefix = adxgridelementsaccordion-
 
 	container {
 

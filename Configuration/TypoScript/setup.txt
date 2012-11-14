@@ -122,9 +122,6 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 
 						field = parentgrid_flexform_tx_adxgridelementsaccordion_fields
 
-						outerWrap = <li><div class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}list-item-wrap"{register: imageBackgroundStyle}> | </div></li>
-						outerWrap.insertData = 1
-
 						split {
 
 							token = ,
@@ -137,6 +134,12 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 								key.current = 1
 							}
 						}
+
+						outerWrap = <li class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}item-wrap"{register: imageBackgroundStyle}> | </li>
+						outerWrap.override = <div class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}item-wrap"{register: imageBackgroundStyle}> | </div>
+						outerWrap.override.if.value.field = parentgrid_flexform_tx_adxgridelementsaccordion_columns
+						outerWrap.override.if.equals = 1
+						outerWrap.insertData = 1
 
 						append = LOAD_REGISTER
 						append.linkIsSet = 0
@@ -173,9 +176,16 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 						10.data = register: accordionContent
 
 						20 = TEXT
-						20.data = register: accordionList
-						20.required = 1
-						20.wrap = <ul class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}controllers"> | </ul><div class="clear"></div>
+						20 {
+
+							data = register: accordionList
+							required = 1
+
+							outerWrap = <ul class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}controllers"> | </ul>
+							outerWrap.override = <div class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}controllers"> | </div>
+							outerWrap.override.if.value.field = parentgrid_flexform_tx_adxgridelementsaccordion_columns
+							outerWrap.override.if.equals = 1
+						}
 
 						30 = TEXT
 						30.data = register: accordionBody
@@ -268,7 +278,7 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 						10.data = register: jsInline1339585170
 
 						20 = TEXT
-						20.value = (function($){ $(document).ready(function(){
+						20.value = (function($){ $(document).ready(function(){ 
 
 						30 = TEXT
 						30.data = register: containerSelector
@@ -279,39 +289,40 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 					}
 
 					10 = TEXT
-					10.value = pageTypeNum:{$plugin.tx_adxgridelementsaccordion.ajaxPageTypeNum},
+					10.if.value = click
+					10.if.equals.field = flexform_tx_adxgridelementsaccordion_event
+					10.if.negate = 1
+					10.dataWrap = event:'{field: flexform_tx_adxgridelementsaccordion_event}',
 
 					15 = TEXT
-					15.if.value = click
-					15.if.equals.field = flexform_tx_adxgridelementsaccordion_event
-					15.if.negate = 1
-					15.dataWrap = event:'{field: flexform_tx_adxgridelementsaccordion_event}',
+					15.fieldRequired = flexform_tx_adxgridelementsaccordion_speed
+					15.dataWrap = speed:'{field: flexform_tx_adxgridelementsaccordion_speed}',
 
 					20 = TEXT
-					20.fieldRequired = flexform_tx_adxgridelementsaccordion_speed
-					20.dataWrap = speed:'{field: flexform_tx_adxgridelementsaccordion_speed}',
+					20.fieldRequired = flexform_tx_adxgridelementsaccordion_collapsible
+					20.dataWrap = collapsible:true,
 
 					25 = TEXT
-					25.fieldRequired = flexform_tx_adxgridelementsaccordion_collapsible
-					25.dataWrap = collapsible:true,
+					25.fieldRequired = flexform_tx_adxgridelementsaccordion_slide
+					25.dataWrap = slide:true,
 
 					30 = TEXT
-					30.fieldRequired = flexform_tx_adxgridelementsaccordion_slide
-					30.dataWrap = slide:true,
+					30.fieldRequired = flexform_tx_adxgridelementsaccordion_active
+					30.dataWrap = active:'{field: flexform_tx_adxgridelementsaccordion_active}',
 
 					35 = TEXT
-					35.fieldRequired = flexform_tx_adxgridelementsaccordion_active
-					35.dataWrap = active:'{field: flexform_tx_adxgridelementsaccordion_active}',
+					35.fieldRequired = flexform_tx_adxgridelementsaccordion_ajax
+					35.dataWrap = ajax:true,
 
 					40 = TEXT
 					40.fieldRequired = flexform_tx_adxgridelementsaccordion_ajax
-					40.dataWrap = ajax:true,
+					40.value = pageTypeNum:{$plugin.tx_adxgridelementsaccordion.ajaxPageTypeNum},
 
 					45 = TEXT
 					45.dataWrap = columns:'{field: flexform_tx_adxgridelementsaccordion_columns}',
 
 					50 = TEXT
-					50.value = namespace:'{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}'
+					50.value = cssClassPrefix:'{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}'
 				}
 			}
 
@@ -319,9 +330,15 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 			20.data = register: accordionContent
 
 			30 = TEXT
-			30.data = register: accordionList
-			30.required = 1
-			30.wrap = <ul class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}controllers"> | </ul>
+			30 {
+				data = register: accordionList
+				required = 1
+
+				outerWrap = <ul class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}controllers"> | </ul>
+				outerWrap.override = <div class="{$plugin.tx_adxgridelementsaccordion.cssClassPrefix}controllers"> | </div>
+				outerWrap.override.if.value.field = parentgrid_flexform_tx_adxgridelementsaccordion_columns
+				outerWrap.override.if.equals = 1
+			}
 
 			40 = TEXT
 			40.data = register: accordionBody
@@ -346,7 +363,7 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 				forceParse = 1
 
 				template = FILE
-				template.file = EXT:adx_gridelements_accordion/Resources/Private/Templates/Styles.css
+				template.file = EXT:adx_gridelements_accordion/Resources/Private/CSS/Styles.css
 
 				marks {
 
@@ -397,6 +414,7 @@ pageAdxGridelementsAccordionAjax {
 
 	10 = CONTENT
 	10 {
+
 		table = tt_content
 
 		select {

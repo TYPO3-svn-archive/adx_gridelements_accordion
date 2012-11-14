@@ -15,7 +15,7 @@
 	$.widget('tx-adxgridelements.flexaccordion', {
 
 		options: {
-			namespace: 'flexaccordion-',
+			cssClassPrefix: 'flexaccordion-',
 			columns: 1,
 			active: 0,
 			event: 'click',
@@ -29,8 +29,8 @@
 		items: [],
 
 		_create: function(){
-			this.options.controllerSelector = '> .' + this.options.namespace + 'controllers > li';
-			this.options.contentSelector = '> .' + this.options.namespace + 'item-content';
+			this.options.controllerSelector = '> .' + this.options.cssClassPrefix + 'controllers > *';
+			this.options.contentSelector = '> .' + this.options.cssClassPrefix + 'item-content';
 			var options = this.options;
 			var self = this;
 
@@ -46,7 +46,7 @@
 			$(this.contents).each(function(index, box){
 				$(box)
 					.height($(box).height())
-					.append('<span class="' + options.namespace + 'close" />')
+					.append('<span class="' + options.cssClassPrefix + 'close" />')
 					.find('.close')
 					.click(function(event){
 						self.close(index);
@@ -96,11 +96,11 @@
 
 		close: function(index){
 			if (index){
-				$(this.controlls[index]).removeClass('active');
-				$(this.contents[index]).slideUp(this.options.speed).removeClass('active');
+				$(this.controlls[index]).removeClass(this.options.cssClassPrefix + 'active');
+				$(this.contents[index]).slideUp(this.options.speed).removeClass(this.options.cssClassPrefix + 'active');
 			} else {
-				$(this.controlls).removeClass('active');
-				$(this.contents).slideUp(this.options.speed).removeClass('active');
+				$(this.controlls).removeClass(this.options.cssClassPrefix + 'active');
+				$(this.contents).slideUp(this.options.speed).removeClass(this.options.cssClassPrefix + 'active');
 			}
 			this.current = null;
 		},
@@ -118,7 +118,7 @@
 						.height($(this.contents[index]).height());
 					self.itemsLoaded[index] = true;
 				}
-				$(this.controlls[index]).addClass('active');
+				$(this.controlls[index]).addClass(this.options.cssClassPrefix + 'active');
 				$(this.contents[index])
 					.slideDown(this.options.speed, function(){
 						if (self.options.slide){
@@ -127,7 +127,7 @@
 							}, 'slow');
 						}
 					})
-					.addClass('active');
+					.addClass(this.options.cssClassPrefix + 'active');
 				this.current = index;
 			} else if (this.options.collapsible){
 				this.close();
