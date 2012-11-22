@@ -3,11 +3,11 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2012-06-13T20:22:32Z" product-name="adx_gridelements_accordion">
 		<header/>
 		<body>
-			<trans-unit id="fields.description" xml:space="preserve">
-				<source>Defines the fields and the order in which the list items of the child records are rendered.</source>
-			</trans-unit>
-			<trans-unit id="columns.description" xml:space="preserve">
+			<trans-unit id="tx_adxgridelementsaccordion_columns.description" xml:space="preserve">
 				<source>In how many columns to display the accordion.</source>
+			</trans-unit>
+			<trans-unit id="tx_adxgridelementsaccordion_render_heading.description" xml:space="preserve">
+				<source>Defines the fields and the order in which the list items of the child records are rendered.</source>
 			</trans-unit>
 		</body>
 	</file>

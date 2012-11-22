@@ -4,19 +4,10 @@
  */
 plugin.tx_adxgridelementsaccordion {
 
-	cssClassPrefix = adxgridelementsaccordion-
-
-	container {
-
-		# Additional class names. cssClassPrefix is added automatically. Required one class!
-		classes = {$plugin.tx_adxgridelementsaccordion.cssClassPrefix}container
-		styles = 
-	}
-
-	gutter = 2.857
-
-	ajaxPageTypeNum = 1343228380
-
-	loaderIconFile = EXT:adx_gridelements_accordion/Resources/Public/Icons/16x16/Loading.png
-
+	columns = 
+	active = 
+	speed = 
+	collapsible = 
+	slideToPosition = 
+	renderHeading = 
 }

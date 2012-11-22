@@ -67,23 +67,11 @@
 				<source>fast</source>
 				<target state="translated">schnell</target>
 			</trans-unit>
-			<trans-unit id="flexform.event" xml:space="preserve">
-				<source>Trigger on</source>
-				<target state="translated">Auslösen bei</target>
-			</trans-unit>
-			<trans-unit id="flexform.event.click" xml:space="preserve">
-				<source>click</source>
-				<target state="translated">klick</target>
-			</trans-unit>
-			<trans-unit id="flexform.event.mouseover" xml:space="preserve">
-				<source>mouseover</source>
-				<target state="translated">mit der Maus über</target>
-			</trans-unit>
 			<trans-unit id="flexform.collapsible" xml:space="preserve">
 				<source>Collapsible</source>
 				<target state="translated">Zusammenklappbar</target>
 			</trans-unit>
-			<trans-unit id="flexform.slide" xml:space="preserve">
+			<trans-unit id="flexform.slideToPosition" xml:space="preserve">
 				<source>Slide to position</source>
 				<target state="translated">Zur Position gleiten</target>
 			</trans-unit>
@@ -91,35 +79,35 @@
 				<source>Rendering</source>
 				<target state="translated">Rendering</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading" xml:space="preserve">
 				<source>Render fields for list items</source>
 				<target state="translated">Render-Felder für Listelemente</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.header" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.header" xml:space="preserve">
 				<source>Header</source>
 				<target state="translated">Überschrift</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.headerFallback" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.headerFallback" xml:space="preserve">
 				<source>Header, subheader fallback</source>
 				<target state="translated">Überschrift, Unterüberschrift-Fallback</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.subheader" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.subheader" xml:space="preserve">
 				<source>Subheader</source>
 				<target state="translated">Unterüberschrift</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.subheaderFallback" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.subheaderFallback" xml:space="preserve">
 				<source>Subheader, header fallback</source>
 				<target state="translated">Unterüberschrift, Überschrift-Fallback</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.text" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.text" xml:space="preserve">
 				<source>Bodytext</source>
 				<target state="translated">Text</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.image" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.image" xml:space="preserve">
 				<source>Images</source>
 				<target state="translated">Bilder</target>
 			</trans-unit>
-			<trans-unit id="flexform.fields.imageBackground" xml:space="preserve">
+			<trans-unit id="flexform.renderHeading.imageBackground" xml:space="preserve">
 				<source>Image as background style</source>
 				<target state="translated">Bild als Hintergrundstil</target>
 			</trans-unit>

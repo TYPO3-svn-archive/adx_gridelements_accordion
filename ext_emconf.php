@@ -12,11 +12,11 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'ad: Grid Elements Accordion',
-	'description' => 'Extends Grid Elements with a flexible accordion.',
+	'description' => 'Extends Grid Elements with Twitter Bootstraps accordion.',
 	'category' => 'plugin',
 	'shy' => 0,
 	'version' => '0.0.0',
-	'dependencies' => 'cms,gridelements',
+	'dependencies' => 'cms,gridelements,adx_twitter_bootstrap',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
@@ -36,6 +36,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'depends' => array(
 			't3jquery' => '2.0.6-',
 			'gridelements' => '1.2.3-',
+			'adx_twitter_bootstrap' => '1.0.0-',
 		),
 		'conflicts' => array(
 		),
