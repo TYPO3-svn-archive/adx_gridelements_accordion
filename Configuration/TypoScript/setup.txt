@@ -399,7 +399,9 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsaccordion {
 
 				wrap = #accordion_c | 
 
-				outerWrap = (function($){ $(document).ready(function(){ $(' | ').on('shown', function(event){ $('html, body').animate({ scrollTop: $(event.target).offset().top }, 'slow'); }); }); })(jQuery);
+				outerWrap = (function($){ $(document).ready(function(){ $(' | ').on('shown', function(event){ $('html, body').animate({ scrollTop: $(event.target).offset().top - ###OFFSET### }, 'slow'); }); }); })(jQuery);
+				outerWrap.replacement.10.search = ###OFFSET###
+				outerWrap.replacement.10.replace.field = flexform_tx_adxgridelementsaccordion_slide_offset
 			}
 		}
 	}

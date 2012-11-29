@@ -75,6 +75,10 @@
 				<source>Slide to position</source>
 				<target state="translated">Zur Position gleiten</target>
 			</trans-unit>
+			<trans-unit id="flexform.slideOffset" xml:space="preserve">
+				<source>Slide offset</source>
+				<target state="translated">Offset</target>
+			</trans-unit>
 			<trans-unit id="flexform.sheet.rendering" xml:space="preserve">
 				<source>Rendering</source>
 				<target state="translated">Rendering</target>

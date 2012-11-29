@@ -115,6 +115,17 @@
 							</config>
 						</TCEforms>
 					</tx_adxgridelementsaccordion_slide_to_position>
+					<tx_adxgridelementsaccordion_slide_offset type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_accordion/Resources/Private/Language/locallang_db.xlf:flexform.slideOffset</label>
+							<config type="array">
+								<type>input</type>
+								<size>3</size>
+								<default type="integer">0</default>
+								<eval>int</eval>
+							</config>
+						</TCEforms>
+					</tx_adxgridelementsaccordion_slide_offset>
 				</el>
 			</ROOT>
 		</tx_adxgridelementsaccordion_general>
